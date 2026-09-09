@@ -5,49 +5,38 @@
              Title="Contador Manual"
              >
 
-    <StackLayout
-        Orientation="Vertical"
+    <VerticalStackLayout
         Spacing="16"
         Margin="16"
-        Padding="12"
-        >
+        Padding="12">
         <Label 
-             Text="conteo:"            
-             HorizontalOptions="Fill"
-             FontSize="Small"
+         Text="conteo:"            
+         HorizontalOptions="Fill"
+         FontSize="Small"
         />
-          <Border
-              Stroke="Gray"
-              StrokeThickness="2"
-              >
-          <Label 
-           Text="10"
-           Margin="16"
-           Padding="24"
-           HorizontalOptions="Center"
-           VerticalOptions="Start"
-           FontSize="Large"
-           FontAttributes="Bold"
-           x:Name="LabelConteo"
-            />
-          </Border>
+        <Border
+           Stroke="Gray"
+           StrokeThickness="2">
+            <Label 
+            Text="10"
+            Margin="16"
+            Padding="24"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            FontSize="Large"
+            FontAttributes="Bold"
+            x:Name="LabelConteo"/>
+        </Border>
         <HorizontalStackLayout
-          HorizontalOptions="Center"
-          Spacing="36"
-            Margin="0,24,0,0">
+         HorizontalOptions="Center"
+         Spacing="36"
+         Margin="0,24,0,0">
          <Button
           Text="contar"
-          Clicked="OnContarButtonClicked"  
-            />
+          Clicked="OnContarButtonClicked"/>
          <Button 
           Text="reiniciar"
-             Clicked="OnReiniciarButtonClicked"
-            />
+          Clicked="OnReiniciarButtonClicked"/>
         </HorizontalStackLayout>
-        
-    </StackLayout>
-    
-        
-        
-    
+    </VerticalStackLayout>
 </ContentPage>
