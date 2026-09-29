@@ -10,19 +10,19 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         _contador = new Contador();
-        LabelConteo.Text=_contador.Conteo.ToString();
+        BindingContext = _contador;
 
 	}
 
     private void OnContarButtonClicked(object sender, EventArgs e)
     {
         _contador.Contar();
-        LabelConteo.Text = _contador.Conteo.ToString();
+        
     }
 
     private void OnReiniciarButtonClicked(object sender, EventArgs e)
     {
         _contador.Reiniciar();
-        LabelConteo.Text = _contador.Conteo.ToString();
+       
     }
 }
