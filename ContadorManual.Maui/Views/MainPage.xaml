@@ -27,6 +27,25 @@
             FontAttributes="Bold"
             />
         </Border>
+
+        <HorizontalStackLayout 
+            Spacing="8">
+
+            <Label VerticalOptions="Center" Text="incrementar conteo por:"/>
+            <Entry 
+                TextColor="Black"
+                BackgroundColor="WhiteSmoke"
+                IsReadOnly="True"
+                Text="{Binding Source={x:Reference IncrementoStepper},Path=Value}"
+                />
+            <Stepper Minimum="1"
+                     Maximum="20"
+                     Increment="1"
+                     x:Name="IncrementoStepper"
+                     Value="{Binding Path=Incremento}"/>
+
+        </HorizontalStackLayout>
+        
         <HorizontalStackLayout
          HorizontalOptions="Center"
          Spacing="36"
